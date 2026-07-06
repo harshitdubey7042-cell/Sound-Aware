@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #091F74;
+  --color-secondary: #169AD9;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+  }
+}
+
+/* Custom scrollbar to look like mobile */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
